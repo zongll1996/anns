@@ -11,9 +11,9 @@ vector_type = 'sift';
 
 fprintf('start loading data\n');
 if strcmp (vector_type, 'siftsmall')
-    dataset = fvecs_read('siftsmall\sift_base.fvecs');
-    query = fvecs_read('siftsmall\sift_query.fvecs');
-    ids = ivecs_read ('siftsmall\sift_groundtruth.ivecs');
+    dataset = fvecs_read('siftsmall\siftsmall_base.fvecs');
+    query = fvecs_read('siftsmall\siftsmall_query.fvecs');
+    ids = ivecs_read ('siftsmall\siftsmall_groundtruth.ivecs');
 elseif strcmp (vector_type, 'sift')
     dataset = fvecs_read('sift\sift_base.fvecs');
     query = fvecs_read('sift\sift_query.fvecs');
